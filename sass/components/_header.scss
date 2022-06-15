@@ -36,12 +36,9 @@
     background-color: #fff;
 
     &.is-open {
-      display: flex;
-      flex-direction: column;
+      display: block;
     }
   }
-
-
 }
 
 .mobile-icon {
@@ -78,5 +75,9 @@
   &:hover,
   &:focus {
     fill: var(--ascent-color);
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }

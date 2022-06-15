@@ -1,6 +1,9 @@
 // Контакты (почта, телефон)
 
 .header-contacts {
+  position: absolute;
+  bottom: 134px;
+
   display: flex;
   flex-direction: column-reverse;
   // margin-left: auto;
@@ -14,8 +17,8 @@
 
   color: var(--primary-text-color);
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
+  &__item:not(:first-child) {
+    margin-bottom: 32px;
   }
 
   &__item:nth-child(1) &__link {
@@ -89,6 +92,9 @@
 }
 
 .header-social-network {
+  position: absolute;
+  bottom: 48px;
+
   display: flex;
 
   font-weight: 500;
@@ -96,7 +102,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
 
-  color: var(--ascent-color);
+  &__link {
+    text-decoration: none;
+    color: var(--ascent-color);
+  }
 
   &__item:not(:last-child) {
     margin-right: 20px;

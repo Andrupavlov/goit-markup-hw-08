@@ -19,7 +19,7 @@
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-    
+
     // padding-top: 32px;
     // padding-bottom: 32px;
 
@@ -29,7 +29,6 @@
     // line-height: 1.2;
     // letter-spacing: 0.02em;
     // text-align: center;
-
 
     text-decoration: none;
 
@@ -52,16 +51,18 @@
   }
 
   // Подчеркивание активного пункта меню навигации
-  // &__link--current::after {
-  //   content: "";
-  //   display: block;
-  //   height: 4px;
-  //   border-radius: 2px;
+  &__link--current::after {
+    @media screen and (min-width: $tablet) {
+      content: "";
+      display: block;
+      height: 4px;
+      border-radius: 2px;
 
-  //   position: absolute;
-  //   width: 100%;
-  //   bottom: -1px;
+      position: absolute;
+      width: 100%;
+      bottom: -1px;
 
-  //   background-color: var(--ascent-color);
-  // }
+      background-color: var(--ascent-color);
+    }
+  }
 }

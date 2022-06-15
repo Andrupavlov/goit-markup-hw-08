@@ -26,7 +26,14 @@
             <span class="logo__1part">Web</span>
             <span class="logo__2part">Studio</span>
           </a>
-          <button type="button" class="mobile-icon">
+          <button
+            type="button"
+            class="mobile-icon"
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+            aria-controls="header__navigation-and-contacts"
+            data-menu-button
+          >
             <svg class="mobile-icon__svg">
               <use
                 href="./images/icons.svg#icon-mobile_menu_open"
@@ -40,7 +47,11 @@
           </button>
         </div>
 
-        <div class="header__navigation-and-contacts">
+        <div
+          class="header__navigation-and-contacts"
+          id="header__navigation-and-contacts"
+          data-menu
+        >
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
@@ -83,6 +94,21 @@
                 </svg>
                 <span class="header-contacts__text">+38 096 111 11 11</span>
               </a>
+            </li>
+          </ul>
+
+          <ul class="header-social-network list">
+            <li class="header-social-network__item">
+              <a href="" class="header-social-network__link">Instagram</a>
+            </li>
+            <li class="header-social-network__item">
+              <a href="" class="header-social-network__link">Twitter</a>
+            </li>
+            <li class="header-social-network__item">
+              <a href="" class="header-social-network__link">Facebook</a>
+            </li>
+            <li class="header-social-network__item">
+              <a href="" class="header-social-network__link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -391,5 +417,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

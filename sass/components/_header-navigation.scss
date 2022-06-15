@@ -8,35 +8,37 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    // margin-right: 50px;
+    margin-bottom: 32px;
   }
 
   &__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    color: var(--title-text-color);
-
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 40px;
+    line-height: 47px;
     letter-spacing: 0.02em;
+    
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.2;
+    // letter-spacing: 0.02em;
+    // text-align: center;
+
 
     text-decoration: none;
+
+    color: var(--title-text-color);
   }
 
   // Подсветка активного меню
   &__link:hover,
   &__link:focus {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
     color: var(--ascent-color);
 
     transition-duration: 250ms;
@@ -50,16 +52,16 @@
   }
 
   // Подчеркивание активного пункта меню навигации
-  &__link--current::after {
-    content: "";
-    display: block;
-    height: 4px;
-    border-radius: 2px;
+  // &__link--current::after {
+  //   content: "";
+  //   display: block;
+  //   height: 4px;
+  //   border-radius: 2px;
 
-    position: absolute;
-    width: 100%;
-    bottom: -1px;
+  //   position: absolute;
+  //   width: 100%;
+  //   bottom: -1px;
 
-    background-color: var(--ascent-color);
-  }
+  //   background-color: var(--ascent-color);
+  // }
 }

@@ -10,4 +10,73 @@
     // display: flex;
     // align-items: center;
   }
+
+  &__box-logo {
+    display: flex;
+    justify-content: space-between;
+
+    height: 60px;
+  }
+
+  &__navigation-and-contacts {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    background-color: #fff;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+}
+
+.mobile-icon {
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: none;
+  background-color: transparent;
+
+  &__svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  & &__close {
+    display: none;
+  }
+
+  &.is-open &__close {
+    display: block;
+  }
+
+  &.is-open &__open {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--ascent-color);
+  }
 }

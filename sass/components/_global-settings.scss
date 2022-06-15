@@ -1,0 +1,43 @@
+// Общие настройки для всех страниц
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--title-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+// Обнулить
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+// Удаление точек у списков
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+// Удаление 2 пикселей у img
+.img {
+  display: block;
+}
+
+// Общие настройки контейнера
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

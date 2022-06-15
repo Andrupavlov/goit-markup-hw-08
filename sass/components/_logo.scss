@@ -1,0 +1,45 @@
+// Логотип
+
+// Общие настройки лого
+.logo {
+  display: block;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  // 1й фрагмент лого (по цвету)
+  &__1part {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    color: var(--ascent-color);
+  }
+
+  // 2й фрагмент лого (по цвету)
+  &__2part {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    color: var(--title-text-color);
+  }
+
+  // Модификаторы для header
+  &--header-margin {
+    margin-right: 93px;
+  }
+
+  // Модификаторы для footer
+  &__2part--whitw-color {
+    color: var(--white-text);
+  }
+
+  &--footer-margin {
+    margin-bottom: 20px;
+  }
+}

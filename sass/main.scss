@@ -1,0 +1,32 @@
+// Все переменные ------------------------------
+@import "./utils/variables";
+// Нормализация css через файл -----------------
+@import "./utils/normalize";
+
+// Общие css настройки -------------------------
+@import "./components/global-settings";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/header-navigation";
+@import "./components/header-contacts";
+
+@import "./components/hero";
+
+@import "./components/section";
+@import "./components/our-feature";
+@import "./components/what-doing";
+@import "./components/team";
+@import "./components/clients";
+
+@import "./components/footer";
+@import "./components/footer-social";
+@import "./components/footer-form";
+
+// Модальное окно ------------------------------
+@import "./components/modal";
+@import "./components/modal-order-service";
+
+// Портфолио -----------------------------------
+@import "./components/portfolio";
+@import "./components/portfolio-card";

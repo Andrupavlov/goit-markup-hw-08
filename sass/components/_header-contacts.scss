@@ -1,0 +1,76 @@
+// Контакты (почта, телефон)
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: flex;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+  }
+
+  &__logo {
+    display: block;
+    width: 16px;
+    height: 80px;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 10px;
+
+    fill: var(--primary-text-color);
+  }
+
+  &__text {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  // Почта, телефон - селектор
+  &__link:hover,
+  &__link:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

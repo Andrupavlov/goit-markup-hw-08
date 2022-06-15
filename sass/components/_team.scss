@@ -1,0 +1,82 @@
+// Наша команда
+
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  // Карточка сотрудника
+  &__employee {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-color);
+  }
+
+  &__employee-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  // Имена сотрудников
+  &__employee-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--title-text-color);
+  }
+
+  // должность сотрудника
+  &__employee-position {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+// Соцсети сотрудников
+.team-social {
+  display: flex;
+  justify-content: space-between;
+
+  width: 206px;
+
+  margin-left: 32px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    fill: var(--icon-gray);
+    border-radius: 50%;
+  }
+
+  &__icon {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+  }
+
+  // Ховер
+  &__logo:hover,
+  &__logo:focus {
+    fill: var(--white-text);
+    background-color: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

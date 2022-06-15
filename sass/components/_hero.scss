@@ -1,0 +1,77 @@
+// Герой
+
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: var(--footer-hero-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // Герой-заголовок
+  &__title {
+    width: 696px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+  }
+
+  // Кнопка-герой
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 200px;
+    height: 50px;
+
+    border-radius: 4px;
+    padding: 14px 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background: #188ce8;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

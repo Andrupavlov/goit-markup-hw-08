@@ -1,0 +1,36 @@
+// Чем мы занимаемся
+
+.what-doing {
+  display: flex;
+  justify-content: space-between;
+
+  &__card {
+    position: relative;
+  }
+
+  &__block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+
+    bottom: 0;
+
+    background: rgba(47, 48, 58, 0.8);
+  }
+
+  &__text {
+    display: block;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+  }
+}

@@ -1,0 +1,65 @@
+// Навигация по сайту
+
+.navigation {
+  display: flex;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+  }
+
+  // Подсветка активного меню
+  &__link:hover,
+  &__link:focus {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link--current {
+    position: relative;
+
+    color: var(--ascent-color);
+  }
+
+  // Подчеркивание активного пункта меню навигации
+  &__link--current::after {
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+
+    background-color: var(--ascent-color);
+  }
+}

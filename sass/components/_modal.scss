@@ -20,8 +20,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 528px;
+    height: 581px;
+  }
+
+  @media screen and (max-width: $mobail) {
+    width: 85%;
+    height: auto;
+  }
 
   padding: 40px;
 

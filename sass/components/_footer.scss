@@ -7,13 +7,24 @@
   background-color: var(--footer-hero-color);
 
   &__container {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     // align-items: baseline;
     // justify-content: space-between;
   }
 
   &__block {
     display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    & .logo {
+      margin-bottom: 20px;
+    }
   }
 
   &__address {
@@ -25,6 +36,10 @@
     display: block;
   }
 
+  &__addres-block:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
   // Физический адрес компании
   &__geo-address {
     display: block;
@@ -34,6 +49,7 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
+    text-align: center;
 
     color: var(--white-text);
   }
@@ -41,7 +57,6 @@
   &__contacts {
     display: block;
     margin-top: 0;
-    margin-bottom: 9px;
 
     font-style: normal;
     font-weight: 500;
@@ -49,6 +64,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
+    text-align: center;
 
     color: var(--primary-text-color);
   }

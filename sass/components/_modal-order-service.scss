@@ -174,8 +174,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 24px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: $tablet) {
+    height: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 24px;
+  }
 
   &__input {
     -webkit-appearance: none;
@@ -193,9 +200,27 @@
     margin-right: 7px;
   }
 
+  &__text {
+    @media screen and (max-width: $tablet) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+    }
+  }
+
   &__agreement-link {
     color: var(--ascent-color);
     margin-left: 4px;
+
+    @media screen and (max-width: $tablet) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__svg {

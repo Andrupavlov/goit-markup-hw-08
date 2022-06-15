@@ -1,6 +1,10 @@
 // Чем мы занимаемся
 .what-doing-section {
   display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .what-doing {

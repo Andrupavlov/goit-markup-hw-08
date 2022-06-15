@@ -1,15 +1,22 @@
 // Портфолио
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 //Кнопки фильтра
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  // justify-content: center;
+  // margin-bottom: 50px;
 
   &__button {
     display: block;
@@ -22,7 +29,9 @@
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 4px;
+
     margin-right: 8px;
+    margin-bottom: 15px;
 
     font-weight: 500;
     font-size: 16px;
@@ -31,6 +40,7 @@
 
     color: var(--title-text-color);
     background-color: #f5f4fa;
+
   }
 
   &__button:hover,

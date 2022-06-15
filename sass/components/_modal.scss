@@ -23,7 +23,7 @@
   // width: 528px;
   // height: 581px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $tablet - 1px) {
     width: 450px;
     height: 609px;
   }
@@ -33,7 +33,7 @@
     height: 581px;
   }
 
-  @media screen and (max-width: $mobail) {
+  @media screen and (max-width: $mobail - 1px) {
     width: 85%;
     height: auto;
   }

@@ -75,7 +75,11 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero__title">
+          Эффективные решения
+          <br />
+          для вашего бизнеса
+        </h1>
         <button data-modal-open type="button" class="hero__button">
           Заказать услугу
         </button>
@@ -138,8 +142,8 @@
         </div>
       </section>
 
-      <section class="section section--no-padding-top">
-        <div class="what-doing-section container">
+      <section class="what-doing-section section section--no-padding-top">
+        <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="what-doing list">
             <li>
@@ -191,7 +195,7 @@
           <ul class="team list">
             <li class="team__employee">
               <img
-                class="img"
+                class="team_img img"
                 src="./images/igor_demyanenko.jpg"
                 alt="фото Игорь Демьяненко"
                 width="270"
@@ -233,7 +237,7 @@
             </li>
             <li class="team__employee">
               <img
-                class="img"
+                class="team_img img"
                 src="./images/olga_repina.jpg"
                 alt="фото Ольга Репина"
                 width="270"
@@ -275,7 +279,7 @@
             </li>
             <li class="team__employee">
               <img
-                class="img"
+                class="team_img img"
                 src="./images/nikolaj_tarasov.jpg"
                 alt="фото Николай Тарасов"
                 width="270"
@@ -317,7 +321,7 @@
             </li>
             <li class="team__employee">
               <img
-                class="img"
+                class="team_img img"
                 src="./images/mihail_ermakov.jpg"
                 alt="фото Михаил Ермаков"
                 width="270"
@@ -365,15 +369,15 @@
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients list">
-            <li>
-              <a href="" class="clients__item">
+            <li class="clients__item">
+              <a href="">
                 <svg class="clients__logo">
                   <use href="./images/icons.svg#icon-client-ya-end-co"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="clients__item">
+            <li class="clients__item">
+              <a href="">
                 <svg class="clients__logo">
                   <use
                     href="./images/icons.svg#icon-client-company-tagline-here"
@@ -381,15 +385,15 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="clients__item">
+            <li class="clients__item">
+              <a href="">
                 <svg class="clients__logo">
                   <use href="./images/icons.svg#icon-client-company"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="clients__item">
+            <li class="clients__item">
+              <a href="">
                 <svg class="clients__logo">
                   <use
                     href="./images/icons.svg#icon-client-foster-peters"
@@ -397,15 +401,15 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="clients__item">
+            <li class="clients__item">
+              <a href="">
                 <svg class="clients__logo">
                   <use href="./images/icons.svg#icon-client-brand"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="clients__item">
+            <li class="clients__item">
+              <a href="">
                 <svg class="clients__logo">
                   <use
                     href="./images/icons.svg#icon-client-company-tag-line"
@@ -427,12 +431,12 @@
           </a>
           <address class="footer__address">
             <ul class="footer__address-list list">
-              <li>
+              <li class="footer__addres-block">
                 <p class="footer__geo-address">
                   г. Киев, пр-т Леси Украинки, 26
                 </p>
               </li>
-              <li>
+              <li class="footer__addres-block">
                 <a
                   href="mailto:info@devstudio.com"
                   target="_blank"
@@ -440,7 +444,7 @@
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="footer__addres-block">
                 <a href="tel:+380961111111" class="footer__contacts"
                   >+38 096 111 11 11</a
                 >
@@ -593,12 +597,16 @@
                 <use href="./images/icons.svg#icon-check_on"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю
+            <span class="checkbox__text"
+              >Соглашаюсь с рассылкой и принимаю</span
+            >
             <a href="" class="checkbox__agreement-link">Условия договора</a>
           </label>
 
           <div class="form__button">
-            <button type="submit" class="form__button-content">Отправить</button>
+            <button type="submit" class="form__button-content">
+              Отправить
+            </button>
           </div>
         </form>
       </div>

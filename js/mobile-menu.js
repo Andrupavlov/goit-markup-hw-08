@@ -10,7 +10,8 @@
 
         mobileMenuRef.classList.toggle("is-open");
 
-        document.body.classList.toggle("is-open-mob-menu");
+        const newLocal = "is-open-mob-menu";
+        document.body.classList.toggle(newLocal);
     });
 })();
     

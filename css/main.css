@@ -280,6 +280,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open,
+body.is-open-mob-menu {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

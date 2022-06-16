@@ -8,6 +8,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+// Запретпрокручивать страницу при открітой модалке
+body.modal-open,
+body.is-open-mob-menu {
+  overflow: hidden;
+}
+
 // Обнулить
 h1,
 h2,

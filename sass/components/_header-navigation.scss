@@ -4,12 +4,18 @@
   // display: flex;
 
   &__list {
-    // display: flex;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &__item:not(:last-child) {
-    // margin-right: 50px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -19,9 +25,6 @@
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     // font-style: normal;
     // font-weight: 500;
@@ -33,6 +36,16 @@
     text-decoration: none;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
   }
 
   // Подсветка активного меню

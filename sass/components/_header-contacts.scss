@@ -20,8 +20,9 @@
 
   @media screen and (min-width: $tablet) {
     position: static;
-    display: block;
-    flex-direction: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__item:not(:first-child) {
@@ -43,8 +44,7 @@
 
   &__item {
     @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-      height: 25px;
+      margin-bottom: 10px;
 
       font-weight: 500;
       font-size: 14px;
@@ -90,7 +90,7 @@
     @media screen and (min-width: $tablet) {
       display: inline-block;
       width: 14px;
-      // height: 80px;
+      height: 14px;
 
       margin-right: 8px;
 
@@ -122,23 +122,27 @@
   }
 
   // Почта, телефон - селектор
-  &__link:hover,
-  &__link:focus {
+  &__link:hover &__text,
+  &__link:focus &__text {
     color: var(--ascent-color);
 
-    // fill: var(--ascent-color);
+    @media screen and (min-width: $tablet) {
+      fill: var(--ascent-color);
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
-  // &__link:hover &__logo,
-  // &__link:focus &__logo {
-  //   fill: var(--ascent-color);
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+    @media screen and (min-width: $tablet) {
+      fill: var(--ascent-color);
 
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // }
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
 .header-social-network {

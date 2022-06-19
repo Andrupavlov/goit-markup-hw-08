@@ -567,11 +567,16 @@ p {
 @media screen and (min-width: 768px) {
   .header-contacts {
     position: static;
-    display: block;
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -595,8 +600,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .header-contacts__item {
-    margin-bottom: 0;
-    height: 25px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -648,6 +652,7 @@ p {
   .header-contacts__logo {
     display: inline-block;
     width: 14px;
+    height: 14px;
     margin-right: 8px;
     fill: var(--primary-text-color);
   }
@@ -670,12 +675,31 @@ p {
   }
 }
 
-.header-contacts__link:hover, .header-contacts__link:focus {
+.header-contacts__link:hover .header-contacts__text,
+.header-contacts__link:focus .header-contacts__text {
   color: var(--ascent-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__link:hover .header-contacts__text,
+  .header-contacts__link:focus .header-contacts__text {
+    fill: var(--ascent-color);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__link:hover .header-contacts__logo,
+  .header-contacts__link:focus .header-contacts__logo {
+    fill: var(--ascent-color);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header-social-network {

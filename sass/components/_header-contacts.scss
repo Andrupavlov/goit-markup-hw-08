@@ -25,6 +25,22 @@
     justify-content: center;
   }
 
+  &__item {
+    @media screen and (min-width: $tablet) {
+      height: 15px;
+
+      margin-bottom: 10px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+
+      color: var(--primary-text-color);
+    }
+  }
+
   &__item:not(:first-child) {
     margin-bottom: 32px;
 
@@ -40,20 +56,6 @@
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
-  }
-
-  &__item {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 10px;
-
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-
-      color: var(--primary-text-color);
-    }
   }
 
   &__item:nth-child(2) &__link {
@@ -84,19 +86,28 @@
     }
   }
 
-  &__logo {
+  &__logo-email {
     display: none;
 
     @media screen and (min-width: $tablet) {
-      display: inline-block;
-      width: 14px;
+      display: block;
       height: 14px;
 
       margin-right: 8px;
 
-      // padding-top: 24px;
-      // padding-bottom: 25px;
-      // margin-right: 10px;
+      fill: var(--primary-text-color);
+    }
+  }
+
+  &__logo-phone {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      width: 14px;
+      transform: translateX(-3px);
+
+      margin-right: 8px;
 
       fill: var(--primary-text-color);
     }
@@ -121,6 +132,10 @@
     }
   }
 
+  &__logo-phone + &__text {
+    transform: translateX(-3px);
+  }
+
   // Почта, телефон - селектор
   &__link:hover &__text,
   &__link:focus &__text {
@@ -134,8 +149,10 @@
     }
   }
 
-  &__link:hover &__logo,
-  &__link:focus &__logo {
+  &__link:hover &__logo-email,
+  &__link:focus &__logo-email,
+  &__link:hover &__logo-phone,
+  &__link:focus &__logo-phone {
     @media screen and (min-width: $tablet) {
       fill: var(--ascent-color);
 

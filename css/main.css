@@ -373,6 +373,12 @@ p {
   background-color: #fff;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header__navigation-and-contacts {
+    padding-left: calc(((100% - 480px) / 2) + 40px);
+  }
+}
+
 .header__navigation-and-contacts.is-open {
   display: block;
 }
@@ -580,6 +586,19 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts__item {
+    height: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+}
+
 .header-contacts__item:not(:first-child) {
   margin-bottom: 32px;
 }
@@ -596,18 +615,6 @@ p {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-}
-
-@media screen and (min-width: 768px) {
-  .header-contacts__item {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--primary-text-color);
-  }
 }
 
 .header-contacts__item:nth-child(2) .header-contacts__link {
@@ -644,15 +651,29 @@ p {
   }
 }
 
-.header-contacts__logo {
+.header-contacts__logo-email {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header-contacts__logo {
-    display: inline-block;
-    width: 14px;
+  .header-contacts__logo-email {
+    display: block;
     height: 14px;
+    margin-right: 8px;
+    fill: var(--primary-text-color);
+  }
+}
+
+.header-contacts__logo-phone {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__logo-phone {
+    display: block;
+    width: 14px;
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
     margin-right: 8px;
     fill: var(--primary-text-color);
   }
@@ -675,6 +696,11 @@ p {
   }
 }
 
+.header-contacts__logo-phone + .header-contacts__text {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
 .header-contacts__link:hover .header-contacts__text,
 .header-contacts__link:focus .header-contacts__text {
   color: var(--ascent-color);
@@ -692,8 +718,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .header-contacts__link:hover .header-contacts__logo,
-  .header-contacts__link:focus .header-contacts__logo {
+  .header-contacts__link:hover .header-contacts__logo-email,
+  .header-contacts__link:focus .header-contacts__logo-email,
+  .header-contacts__link:hover .header-contacts__logo-phone,
+  .header-contacts__link:focus .header-contacts__logo-phone {
     fill: var(--ascent-color);
     -webkit-transition-duration: 250ms;
             transition-duration: 250ms;

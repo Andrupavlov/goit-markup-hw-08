@@ -37,6 +37,10 @@
 
     background-color: #fff;
 
+    @media screen and (min-width: $mobail) and (max-width: $tablet) {
+      padding-left: calc(((100% - 480px) / 2) + 40px);
+    }
+
     &.is-open {
       display: block;
     }

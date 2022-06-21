@@ -28,7 +28,6 @@
   }
 
   &__link {
-    // display: block;
     text-decoration: none;
 
     display: flex;
@@ -52,14 +51,17 @@
     position: relative;
     overflow: hidden;
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    display: flex;
+
     & .img {
       width: 100%;
     }
   }
 
   &__description {
-    display: block;
+    display: flex;
+    align-items: center;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -70,8 +72,6 @@
 
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 63px;
-    padding-bottom: 63px;
 
     font-weight: 400;
     font-size: 18px;
@@ -87,6 +87,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: transform;
+  }
+
+  &__description-text {
+    display: block;
   }
 
   &__link:hover &__description,

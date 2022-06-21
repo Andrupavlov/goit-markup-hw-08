@@ -2105,6 +2105,9 @@ p {
 .project-card__block {
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .project-card__block .img {
@@ -2112,7 +2115,12 @@ p {
 }
 
 .project-card__description {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -2121,8 +2129,6 @@ p {
   overflow: auto;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 63px;
-  padding-bottom: 63px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -2140,6 +2146,10 @@ p {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+}
+
+.project-card__description-text {
+  display: block;
 }
 
 .project-card__link:hover .project-card__description,

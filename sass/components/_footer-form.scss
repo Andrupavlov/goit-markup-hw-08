@@ -1,9 +1,7 @@
 // Форма подписки для футтера
 
 .form-subscribe {
-  // margin-left: 93px;
   width: 100%;
-  
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -36,16 +34,11 @@
   }
 
   &__input {
-    // display: flex;
-    // align-items: center;
-
     height: 50px;
     width: 100%;
-    // width: 358px;
 
     padding-left: 16px;
     padding-right: 16px;
-    // margin-right: 12px;
 
     margin-bottom: 20px;
 

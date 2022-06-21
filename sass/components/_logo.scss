@@ -17,14 +17,12 @@
 
   @media screen and (min-width: $tablet) {
     width: 154px;
-    // margin-right: 88px;
     font-size: 26px;
     line-height: 1.2;
   }
 
   // 1й фрагмент лого (по цвету)
   &__1part {
-    // display: inline-block;
     color: var(--ascent-color);
   }
 
@@ -46,12 +44,8 @@
     }
   }
 
-  // Модификаторы для footer
+  // Модификатор для footer
   &__2part--whitw-color {
     color: var(--white-text);
-  }
-
-  &--footer-margin {
-    // margin-bottom: 20px;
   }
 }

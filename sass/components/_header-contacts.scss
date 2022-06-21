@@ -25,6 +25,11 @@
     justify-content: center;
   }
 
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
+
   &__item {
     @media screen and (min-width: $tablet) {
       height: 15px;
@@ -38,6 +43,10 @@
       text-decoration: none;
 
       color: var(--primary-text-color);
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
     }
   }
 
@@ -56,6 +65,10 @@
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
   }
 
   &__item:nth-child(2) &__link {
@@ -126,9 +139,14 @@
 
       font-weight: 500;
       font-size: 12px;
-      line-height: 14px;
+      line-height: 1.16;
 
       letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
     }
   }
 

@@ -11,6 +11,18 @@
 
   color: var(--white-text);
 
+  @media screen and (min-width: $tablet) {
+    margin-right: 71px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &__title {
     margin-bottom: 20px;
     text-align: center;

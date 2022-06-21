@@ -17,6 +17,14 @@
     height: 92px;
     margin-bottom: 30px;
 
+    @media screen and (min-width: $tablet) {
+      width: calc((100% / 3) - 20px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - ((20px * 5) + 30px)) / 6);
+    }
+
     cursor: pointer;
 
     border-radius: 4px;

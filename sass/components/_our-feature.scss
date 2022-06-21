@@ -3,10 +3,33 @@
 .our-feature {
   // display: flex;
   // justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
+
+    &:nth-child(2n + 1) {
+      @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        margin-right: 30px;
+      }
     }
   }
 
@@ -43,6 +66,10 @@
     text-align: center;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: $tablet){
+      text-align: left;
+    }
   }
 
   // Описание преимуществ, каждого типа

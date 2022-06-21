@@ -2,33 +2,37 @@
 
 // Коробка со списком проектов
 .projects {
-  // display: flex;
-  // flex-wrap: wrap;
+  margin-bottom: -30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
 
 // Список карточек проектов
 .project-card {
   display: block;
-  // margin-right: 30px;
-  // margin-bottom: 30px;
+  margin-bottom: 30px;
 
-  // Убрать у проавой 3й карточки марджин
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
 
-  // Выбрать и убрать марджин у карточек снизу
-  // &:nth-last-child(-n + 3) {
-  //   margin-bottom: 0;
-  // }
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 30px * 2) / 3);
   }
 
   &__link {
-    display: block;
+    // display: block;
     text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
   }
 
   &__link:hover,
@@ -98,6 +102,10 @@
     border-width: 0px 1px 1px 1px;
     border-style: solid;
     border-color: #eeeeee;
+
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 281px);
   }
 
   // Заголовок карточки

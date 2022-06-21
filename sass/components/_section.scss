@@ -4,16 +4,22 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   color: var(--primary-text-color);
 
   // Заголовок секции
   &__title {
     margin-top: 0;
-    // margin-bottom: 50px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
 
     font-weight: 700;
     font-size: 36px;

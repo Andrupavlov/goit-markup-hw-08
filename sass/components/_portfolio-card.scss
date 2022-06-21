@@ -18,11 +18,13 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 30px) / 2);
+    // width: calc((100% - 30px) / 2);
+    width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 30px * 2) / 3);
+    // width: calc((100% - 30px * 2) / 3);
+    width: 370px;
   }
 
   &__link {

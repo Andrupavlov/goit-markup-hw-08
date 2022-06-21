@@ -2060,13 +2060,13 @@ p {
 
 @media screen and (min-width: 768px) {
   .project-card {
-    width: calc((100% - 30px) / 2);
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .project-card {
-    width: calc((100% - 30px * 2) / 3);
+    width: 370px;
   }
 }
 

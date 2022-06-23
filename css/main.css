@@ -365,7 +365,6 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 48px;
@@ -399,6 +398,10 @@ p {
   }
 }
 
+.header__navigation-and-contacts.is-open {
+  z-index: 1;
+}
+
 .mobile-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,7 +411,6 @@ p {
           align-items: center;
   height: 40px;
   width: 40px;
-  z-index: 2;
   padding: 0;
   margin-top: auto;
   margin-bottom: auto;
@@ -441,6 +443,10 @@ p {
   .mobile-icon {
     display: none;
   }
+}
+
+.mobile-icon.is-open {
+  z-index: 2;
 }
 
 .logo {

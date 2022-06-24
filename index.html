@@ -192,15 +192,19 @@
       </div>
     </section>
 
+    <!-- 480px, 768px і 1200px. -->
     <section class="section section--background-color">
       <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="team list">
           <li class="team__employee">
-            <img class="team_img img" srcset="
-                  ./images/igor_demyanenko.jpg    1x,
-                  ./images/igor_demyanenko@2x.jpg 2x
-                " src="./images/igor_demyanenko.jpg" alt="фото Игорь Демьяненко" width="270" />
+            <picture>
+              <img class="team_img img" srcset="
+                    ./images/igor_demyanenko.jpg    270w,
+                    ./images/igor_demyanenko@2x.jpg 540w
+                  " src="./images/igor_demyanenko.jpg" alt="фото Игорь Демьяненко"
+                sizes="(min-width: 1200px) 15vw, (min-width: 768px) 100vw" />
+            </picture>
             <div class="team__employee-info">
               <h3 class="team__employee-name">Игорь Демьяненко</h3>
               <p class="team__employee-position">Product Designer</p>
@@ -237,10 +241,13 @@
             </div>
           </li>
           <li class="team__employee">
-            <img class="team_img img" srcset="
-                  ./images/olga_repina.jpg    1x,
-                  ./images/olga_repina@2x.jpg 2x
-                " src="./images/olga_repina.jpg" alt="фото Ольга Репина" width="270" />
+            <picture>
+              <img class="team_img img" srcset="
+                    ./images/olga_repina.jpg    270w,
+                    ./images/olga_repina@2x.jpg 540w
+                  " src="./images/olga_repina.jpg" alt="фото Ольга Репина"
+                sizes="(min-width: 1200px) 15vw, (min-width: 768px) 100vw" />
+            </picture>
             <div class="team__employee-info">
               <h3 class="team__employee-name">Ольга Репина</h3>
               <p class="team__employee-position">Frontend Developer</p>
@@ -277,10 +284,13 @@
             </div>
           </li>
           <li class="team__employee">
-            <img class="team_img img" srcset="
-                  ./images/nikolaj_tarasov.jpg    1x,
-                  ./images/nikolaj_tarasov@2x.jpg 2x
-                " src="./images/nikolaj_tarasov.jpg" alt="фото Николай Тарасов" width="270" />
+            <picture>
+              <img class="team_img img" srcset="
+                    ./images/nikolaj_tarasov.jpg    270w,
+                    ./images/nikolaj_tarasov@2x.jpg 540w
+                  " src="./images/nikolaj_tarasov.jpg" alt="фото Николай Тарасов"
+                sizes="(min-width: 1200px) 15vw, (min-width: 768px) 100vw" />
+            </picture>
             <div class="team__employee-info">
               <h3 class="team__employee-name">Николай Тарасов</h3>
               <p class="team__employee-position">Marketing</p>
@@ -317,10 +327,13 @@
             </div>
           </li>
           <li class="team__employee">
-            <img class="team_img img" srcset="
-                  ./images/mihail_ermakov.jpg    1x,
-                  ./images/mihail_ermakov@2x.jpg 2x
-                " src="./images/mihail_ermakov.jpg" alt="фото Михаил Ермаков" width="270" />
+            <picture>
+              <img class="team_img img" srcset="
+                    ./images/mihail_ermakov.jpg    270w,
+                    ./images/mihail_ermakov@2x.jpg 540w
+                  " src="./images/mihail_ermakov.jpg" alt="фото Михаил Ермаков"
+                sizes="(min-width: 1200px) 15vw, (min-width: 768px) 100vw" />
+            </picture>
             <div class="team__employee-info">
               <h3 class="team__employee-name">Михаил Ермаков</h3>
               <p class="team__employee-position">UI Designer</p>

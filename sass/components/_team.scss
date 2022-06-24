@@ -11,10 +11,8 @@
 
   // Карточка сотрудника
   &__employee {
-    @media screen and (min-width: $mobail) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
 
     @media screen and (min-width: $tablet) {
